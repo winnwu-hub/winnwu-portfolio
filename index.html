@@ -215,6 +215,38 @@
       border-top: 1px solid #eee;
     }
 
+        /* Strategy Grid */
+    .strategy-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .strategy-item {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 24px;
+        border: 1px solid #eee;
+    }
+    .strategy-item .num {
+        font-size: 0.75em;
+        font-weight: 700;
+        color: #1a1a2e;
+        background: #e8edf5;
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .strategy-item h3 {
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+    .strategy-item p {
+        font-size: 0.9em;
+        color: #555;
+        line-height: 1.6;
+    }
+
     @media (max-width: 700px) {
       .metrics { grid-template-columns: repeat(2, 1fr); }
       .platform-grid { grid-template-columns: 1fr; }
@@ -311,7 +343,41 @@
   </div>
 </section>
 
-<!-- 代表内容 --><!-- 代表内容 -->
+<!-- 运营策略与方法 -->
+<section>
+  <div class="container">
+    <h2 style="margin-bottom:28px;">运营策略与方法</h2>
+    <div class="strategy-grid">
+
+      <div class="strategy-item">
+        <div class="num">01</div>
+        <h3>平台定位与差异化运营</h3>
+        <p>根据小红书、视频号、B站各平台的算法机制与用户画像，制定差异化内容策略。同一主题内容按平台特征进行适配改编，而非简单搬运，最大化内容在各平台的自然流量获取效率。</p>
+      </div>
+
+      <div class="strategy-item">
+        <div class="num">02</div>
+        <h3>搜索流量驱动的选题策略</h3>
+        <p>以用户搜索意图为核心进行选题与标题关键词布局，结合热点话题与长尾关键词，使内容在发布后持续获得搜索流量，形成稳定的长尾曝光。</p>
+      </div>
+
+      <div class="strategy-item">
+        <div class="num">03</div>
+        <h3>数据驱动的迭代优化</h3>
+        <p>每周统计播放量、完播率、互动率、评论反馈等数据，对比不同标题风格、封面设计、发布时间的效果差异，将数据结论直接应用于下一期内容策划，形成"选题 发布 复盘 优化"的闭环。</p>
+      </div>
+
+      <div class="strategy-item">
+        <div class="num">04</div>
+        <h3>内容系列化与用户沉淀</h3>
+        <p>围绕核心主题打造系列内容，建立用户对账号的内容预期，提升关注转化和粉丝粘性，实现从单条爆款到账号资产的持续积累。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 代表内容 -->
 <section>
   <div class="container">
     <h2>代表内容</h2>
@@ -323,6 +389,9 @@
         <p style="color:#555; font-size:0.9em; margin-top:6px;">
           碎片化日语学习内容，通过场景化教学切入高频需求话题，标题直接命中搜索流量。
         </p>
+        <div style="background:#fff; border-left:3px solid #1a1a2e; padding:12px 16px; margin-top:12px; border-radius:0 6px 6px 0; font-size:0.88em; color:#444;">
+          <strong>策略分析：</strong>选择"酒店入住"这一高频场景作为切入点，标题精准覆盖搜索关键词；场景化封面配合标题形成搜索吸引力，发布后持续获得自然搜索流量，成为账号长尾曝光的代表内容。
+        </div>
         <div class="data-row">
           <div class="item"><div class="num">38,074</div><div class="lbl">播放量</div></div>
           <div class="item"><div class="num">1,683</div><div class="lbl">点赞</div></div>
