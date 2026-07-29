@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吴漾 - 社媒运营作品集</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+      padding: 60px 0 50px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; font-weight: 700; letter-spacing: 2px; }
+    header p { font-size: 1.1em; opacity: 0.85; margin-top: 10px; }
+    header .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin: 15px 5px 0;
+    }
+
+    /* Sections */
+    section { padding: 40px 0; }
+    section:nth-child(even) { background: white; }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #1a1a2e;
+      display: inline-block;
+    }
+
+    /* Profile */
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .profile-item h3 {
+      font-size: 0.95em;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .profile-item p { color: #555; font-size: 0.95em; }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill-tag {
+      background: #e8edf5;
+      color: #1a1a2e;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    /* Platform cards */
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .platform-card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      border: 1px solid #eee;
+    }
+    .platform-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .platform-card .platform { color: #888; font-size: 0.85em; }
+    .platform-card .stat {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 10px 0 5px;
+    }
+    .platform-card .label { color: #666; font-size: 0.85em; }
+    .platform-card .desc {
+      color: #555;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    /* Highlight numbers */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .highlight-num {
+      font-size: 2em;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    .highlight-label { color: #666; font-size: 0.85em; margin-top: 5px; }
+
+    /* CV download */
+    .cv-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .cv-card {
+      background: #f8f9fa;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+    }
+    .cv-card h3 { font-size: 1em; margin-bottom: 8px; }
+    .cv-card p { font-size: 0.85em; color: #666; margin-bottom: 15px; }
+    .cv-card a {
+      display: inline-block;
+      background: #1a1a2e;
+      color: white;
+      text-decoration: none;
+      padding: 8px 25px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      transition: background 0.2s;
+    }
+    .cv-card a:hover { background: #2d2d5e; }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 30px 0 50px;
+    }
+    .contact a {
+      color: #1a1a2e;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.85em;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 700px) {
+      .profile-grid,
+      .cv-list,
+      .highlights { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>吴 漾</h1>
+    <p>社媒运营 · 内容策划 · 海外推广</p>
+    <span class="tag">6 年跨境电商经验</span>
+    <span class="tag">3 年社媒运营经验</span>
+    <span class="tag">英语 / 日语</span>
+  </div>
+</header>
+
+<!-- 核心数据 -->
+<section>
+  <div class="container">
+    <div class="highlights">
+      <div><div class="highlight-num">近 5 万</div><div class="highlight-label">累计粉丝</div></div>
+      <div><div class="highlight-num">4</div><div class="highlight-label">运营平台</div></div>
+      <div><div class="highlight-num">8+</div><div class="highlight-label">日本 KOL 合作</div></div>
+      <div><div class="highlight-num">6 年</div><div class="highlight-label">跨境运营经验</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 个人简介 -->
+<section>
+  <div class="container">
+    <h2>个人简介</h2>
+    <p style="margin-top:15px; color:#555;">
+      拥有 3 年多平台社媒运营经验与 6 年跨境电商背景，从 0 到 1 搭建并运营多平台内容矩阵。
+      熟悉 Facebook、Instagram、小红书、抖音、B 站、视频号等平台的运营逻辑与内容策略，
+      能独立完成账号定位、内容策划、图文排版与视频制作。英语可作为工作语言（雅思 6.5），日语 N1。
+    </p>
+  </div>
+</section>
+
+<!-- 社媒运营数据 -->
+<section>
+  <div class="container">
+    <h2>社媒运营数据</h2>
+    <div class="platforms" style="margin-top:20px;">
+      <div class="platform-card">
+        <h3>小红书</h3>
+        <div class="platform">日语学习</div>
+        <div class="stat">6,000</div>
+        <div class="label">粉丝</div>
+        <div class="desc">2 个月从 0 到 6000，碎片化学习内容</div>
+      </div>
+      <div class="platform-card">
+        <h3>抖音</h3>
+        <div class="platform">日语学习</div>
+        <div class="stat">—</div>
+        <div class="label">日语学习类内容</div>
+        <div class="desc">短视频运营，AI 视频制作</div>
+      </div>
+      <div class="platform-card">
+        <h3>B 站</h3>
+        <div class="platform">日语学习</div>
+        <div class="stat">—</div>
+        <div class="label">日语学习类内容</div>
+        <div class="desc">中长视频 + 短视频内容运营</div>
+      </div>
+      <div class="platform-card">
+        <h3>视频号</h3>
+        <div class="platform">日语学习</div>
+        <div class="stat">—</div>
+        <div class="label">日语学习类内容</div>
+        <div class="desc">微信生态内容运营</div>
+      </div>
+    </div>
+    <p style="margin-top:15px; color:#888; font-size:0.85em;">
+      * 部分平台具体粉丝数据因账号已暂停更新，暂时无法获取精确数值。多平台累计粉丝近 5 万。
+    </p>
+  </div>
+</section>
+
+<!-- 海外推广 -->
+<section>
+  <div class="container">
+    <h2>海外推广案例</h2>
+    <div class="profile-grid" style="margin-top:20px;">
+      <div class="profile-item">
+        <h3>Facebook 品牌社媒搭建</h3>
+        <p>从 0 搭建跨境电商社交媒体运营体系，负责品牌在 Facebook 等平台的定位、内容规划与推广执行</p>
+      </div>
+      <div class="profile-item">
+        <h3>日本 KOL 合作</h3>
+        <p>自主调研并筛选日本 KOL，通过邮件和线上会议建立长期合作，与 8 名 KOL 达成合作，带动销售额增长约 10%</p>
+      </div>
+      <div class="profile-item">
+        <h3>独立站搭建</h3>
+        <p>从 0 搭建日本市场独立站，负责网站结构规划、产品上架、页面布局及上线后运营维护</p>
+      </div>
+      <div class="profile-item">
+        <h3>数据分析驱动</h3>
+        <p>使用 Excel 数据透视表与 VLOOKUP 进行推广数据分析，基于播放量、完播率等数据持续迭代内容策略</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 核心能力 -->
+<section>
+  <div class="container">
+    <h2>核心能力</h2>
+    <div class="skills" style="margin-top:20px;">
+      <span class="skill-tag">多平台社媒运营</span>
+      <span class="skill-tag">内容策划</span>
+      <span class="skill-tag">短视频剪辑（Pr/剪映）</span>
+      <span class="skill-tag">图文排版</span>
+      <span class="skill-tag">Facebook/Instagram 推广</span>
+      <span class="skill-tag">KOL 合作</span>
+      <span class="skill-tag">数据分析</span>
+      <span class="skill-tag">SEO 基础优化</span>
+      <span class="skill-tag">AI 工具辅助创作</span>
+      <span class="skill-tag">跨境电商运营</span>
+    </div>
+  </div>
+</section>
+
+<!-- 简历下载 -->
+<section>
+  <div class="container">
+    <h2>简历下载</h2>
+    <div class="cv-list" style="margin-top:20px;">
+      <div class="cv-card">
+        <h3>海外社媒运营</h3>
+        <p>针对澳洲商业清洁公司社媒运营岗位定制</p>
+        <a href="cv/海外社媒运营-吴漾.pdf" target="_blank">查看 PDF</a>
+      </div>
+      <div class="cv-card">
+        <h3>网站运营及 SEO</h3>
+        <p>针对澳洲建材电商网站运营及 SEO 岗位定制</p>
+        <a href="cv/网站运营及SEO-吴漾.pdf" target="_blank">查看 PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 联系方式 -->
+<div class="contact">
+  <div class="container">
+    <p>📧 <a href="mailto:xiafan2012@126.com">xiafan2012@126.com</a></p>
+    <p style="margin-top:5px;">📱 15913150950</p>
+  </div>
+</div>
+
+<footer>
+  <div class="container">吴漾 · 社媒运营作品集</div>
+</footer>
+
+</body>
+</html>
