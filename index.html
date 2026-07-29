@@ -75,6 +75,41 @@
     .platform-stats .stat-item .num { font-size: 1.6em; font-weight: 700; color: #1a1a2e; }
     .platform-stats .stat-item .lbl { font-size: 0.8em; color: #888; }
 
+    /* Platform Grid - horizontal layout */
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .platform-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+    }
+    .platform-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+    }
+    .platform-card .platform-stats { margin: 8px 0; gap: 20px; }
+    .platform-card .platform-stats .stat-item .num { font-size: 1.3em; }
+    .platform-card .screenshot { margin: 8px 0; }
+    .platform-card .screenshot img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .platform-card .highlights-list {
+      padding: 12px 16px;
+      margin: 8px 0 0;
+      font-size: 0.9em;
+      flex: 1;
+    }
+    .platform-card .highlights-list li { margin-bottom: 6px; }
+
     .screenshot {
       margin: 16px 0;
       max-width: 100%;
@@ -182,6 +217,7 @@
 
     @media (max-width: 700px) {
       .metrics { grid-template-columns: repeat(2, 1fr); }
+      .platform-grid { grid-template-columns: 1fr; }
       .featured-card { flex-direction: column; }
       .featured-card img { width: 100%; }
       .platform-stats { gap: 16px; }
@@ -219,72 +255,63 @@
   </div>
 </section>
 
-<!-- 平台①：小红书 -->
+<!-- 运营平台横排 -->
 <section>
   <div class="container">
-    <h2>平台 ①：小红书</h2>
-    <div class="platform-block">
-      <div class="platform-stats">
-        <div class="stat-item"><div class="num">19,183</div><div class="lbl">粉丝</div></div>
-        <div class="stat-item"><div class="num">6.1 万</div><div class="lbl">获赞与收藏</div></div>
+    <h2 style="margin-bottom:28px;">运营平台</h2>
+    <div class="platform-grid">
+
+      <div class="platform-card">
+        <h3>小红书</h3>
+        <div class="platform-stats">
+          <div class="stat-item"><div class="num">19,183</div><div class="lbl">粉丝</div></div>
+          <div class="stat-item"><div class="num">6.1 万</div><div class="lbl">获赞与收藏</div></div>
+        </div>
+        <div class="screenshot">
+          <img src="social-media/xiaohongshu-profile.jpg" alt="小红书个人主页" loading="lazy">
+        </div>
+        <ul class="highlights-list">
+          <li>从 0 跑通"内容选题 封面优化 发布节奏 数据反馈"循环</li>
+          <li>对比不同标题与封面风格的数据差异，建立对流量规律的判断</li>
+          <li>熟悉商业内容生态与品牌合作笔记的呈现方式</li>
+        </ul>
       </div>
-      <div class="screenshot">
-        <img src="social-media/xiaohongshu-profile.jpg" alt="小红书个人主页截图" loading="lazy">
-        <div class="caption">小红书个人主页</div>
+
+      <div class="platform-card">
+        <h3>视频号</h3>
+        <div class="platform-stats">
+          <div class="stat-item"><div class="num">12,949</div><div class="lbl">粉丝</div></div>
+        </div>
+        <div class="screenshot">
+          <img src="social-media/video-profile.jpg" alt="视频号个人主页" loading="lazy">
+        </div>
+        <ul class="highlights-list">
+          <li>理解社交分发与公域推荐的流量组合逻辑</li>
+          <li>利用朋友圈转发、群聊、公众号等微信生态传播</li>
+          <li>针对视频号用户画像调整内容选题与表达方式</li>
+        </ul>
       </div>
-      <ul class="highlights-list">
-        <li>从 0 到积累稳定粉丝基础，跑通了一条"内容选题 → 封面优化 → 发布节奏 → 数据反馈"的循环</li>
-        <li>通过对比不同标题与封面风格的数据差异，逐步建立对平台流量规律的判断</li>
-        <li>评论区互动与私信沟通的实操经验，了解用户反馈如何反哺内容方向调整</li>
-        <li>熟悉小红书的商业内容生态，理解品牌合作笔记的内容呈现方式与流量特点</li>
-      </ul>
+
+      <div class="platform-card">
+        <h3>B 站</h3>
+        <div class="platform-stats">
+          <div class="stat-item"><div class="num">8,926</div><div class="lbl">粉丝</div></div>
+        </div>
+        <div class="screenshot">
+          <img src="social-media/bilibili-profile.jpg" alt="B站个人主页" loading="lazy">
+        </div>
+        <ul class="highlights-list">
+          <li>同一主题内容适配不同平台发布，积累二创与分发经验</li>
+          <li>通过完播率、互动率、评论反馈判断内容方向</li>
+          <li>跨平台运营认知：B 站重深度，抖音重开头抓人</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- 平台②：视频号 -->
-<section>
-  <div class="container">
-    <h2>平台 ②：视频号</h2>
-    <div class="platform-block">
-      <div class="platform-stats">
-        <div class="stat-item"><div class="num">12,949</div><div class="lbl">粉丝</div></div>
-      </div>
-      <div class="screenshot">
-        <img src="social-media/video-profile.png" alt="视频号个人主页截图" loading="lazy">
-        <div class="caption">视频号个人主页</div>
-      </div>
-      <ul class="highlights-list">
-        <li>从零起步，持续运营至积累稳定粉丝，理解社交分发（好友点赞推荐）与公域推荐的流量组合逻辑</li>
-        <li>利用微信生态的传播特性（朋友圈转发、群聊分享、公众号嵌入），探索过内容跨场景触达的路径</li>
-        <li>针对视频号用户画像与抖音/小红书不同的特点，调整过内容选题方向与表达方式</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 平台③：B站 -->
-<section>
-  <div class="container">
-    <h2>平台 ③：B 站</h2>
-    <div class="platform-block">
-      <div class="platform-stats">
-        <div class="stat-item"><div class="num">8,926</div><div class="lbl">粉丝</div></div>
-      </div>
-      <div class="screenshot">
-        <img src="social-media/bilibili-profile.jpg" alt="B站个人主页截图" loading="lazy">
-        <div class="caption">B站个人主页</div>
-      </div>
-      <ul class="highlights-list">
-        <li>将同一主题内容适配不同平台发布（小红书图文 / 视频号短视频 / B 站中长视频），积累了内容二创与分发实操经验</li>
-        <li>通过观察完播率、互动率、评论区反馈来判断内容方向是否有效，逐步建立数据驱动的迭代习惯</li>
-        <li>跨平台运营的经历让对不同平台的用户内容偏好有了直观认知——B 站用户看重内容深度，抖音更看重开头抓人</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 代表内容 -->
+<!-- 代表内容 --><!-- 代表内容 -->
 <section>
   <div class="container">
     <h2>代表内容</h2>
